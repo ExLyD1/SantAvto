@@ -1,0 +1,45 @@
+/* assets/css/splide-overrides.css */
+
+.splide__arrow.splide__arrow--prev {
+	position: absolute;
+	left: -140px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 80px !important;
+	height: 80px !important;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.splide__arrow.splide__arrow--prev:hover {
+	background-color: #f3f4f6;
+}
+
+.splide__arrow.splide__arrow--next {
+	position: absolute;
+	right: -140px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 80px !important;
+	height: 80px !important;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.splide__arrow.splide__arrow--next:hover {
+	background-color: #f3f4f6;
+}
