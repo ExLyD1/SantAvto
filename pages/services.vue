@@ -58,7 +58,7 @@
 					v-for="(service, index) in servicesDetailList"
 					class="w-[770px] h-[350px]"
 					:class="{
-						'mt-12': index > 1,
+						'mt-12': index > 1 && isLargeScreen,
 						animateSlideInLeft:
 							index % 2 === 0 && isVisibleList[index].value,
 						animateSlideInRight:
@@ -76,6 +76,9 @@
 <script setup lang="ts">
 import ServiceDetailType from '~/entities/service/ui/ServiceDetailType.vue'
 import { servicesDetailList } from '~/entities/service/config/serviceDetailTypeConfig'
+import { useMediaQuery } from '@vueuse/core'
+
+const isLargeScreen = useMediaQuery('(min-width: 1545px)')
 
 import { useVisibility } from '#imports'
 
@@ -102,6 +105,11 @@ const isVisibleList = elRefs.map(elRef =>
 </script>
 
 <style scoped>
+@media screen and (max-width: 1545px) {
+	.containerServices {
+		gap: 20px;
+	}
+}
 /* Планшеты (1024px и менее) */
 @media (max-width: 1024px) {
 	.h-\[620px\] {

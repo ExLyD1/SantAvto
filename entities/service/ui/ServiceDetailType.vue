@@ -80,10 +80,11 @@
 					>
 						<div
 							v-if="isPriceListOpen"
-							class="absolute w-[500px] left-[-25px] top-[-25px] z-50 shadow-2xl"
+							class="absolute w-[500px] left-[-25px] top-[-25px] z-[999999] shadow-2xl"
 							@click.stop
 						>
 							<ServiceMenu
+								class="w-full"
 								:services="currentServices"
 								@close="closePriceList"
 							/>
@@ -325,8 +326,8 @@ onMounted(() => {
 	}
 
 	.w-\[500px\] {
-		width: calc(100vw - 20px);
-		max-width: 300px;
+		max-width: 460px;
+		width: 100%;
 	}
 
 	.left-\[-25px\] {

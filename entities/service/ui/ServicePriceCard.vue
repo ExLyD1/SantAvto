@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="h-[460px] w-[500px] flex items-center justify-between flex-col p-12 border border-[#2A2A2A] text-white relative"
+		class="h-fit w-[500px] flex flex-col! items-center justify-between p-12 border border-[#2A2A2A] text-white relative"
 		ref="cardRef"
 	>
 		<!-- car description / info -->
@@ -10,7 +10,7 @@
 		</div>
 
 		<div class="flex flex-col w-full gap-5">
-			<div class="flex flex-col gap-3 relative h-[150px]">
+			<div class="flex flex-col gap-3 relative h-fit">
 				<div
 					v-for="(service, index) in serviceGroup.services"
 					:key="index"
@@ -245,50 +245,6 @@ onMounted(() => {
 }
 
 /* Малые планшеты (768px и менее) */
-@media (max-width: 768px) {
-	.h-\[460px\] {
-		height: 350px;
-	}
-
-	.w-\[500px\] {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 10px;
-	}
-
-	.p-12 {
-		padding: 1.5rem;
-	}
-
-	.text-2xl {
-		font-size: 1.25rem;
-	}
-
-	.gap-4 {
-		gap: 0.75rem;
-	}
-
-	.gap-5 {
-		gap: 1rem;
-	}
-
-	.h-\[150px\] {
-		height: 120px;
-	}
-
-	.text-sm {
-		font-size: 0.75rem;
-	}
-
-	.absolute.w-\[500px\] {
-		width: calc(100vw - 40px);
-		max-width: 400px;
-	}
-
-	.left-\[45px\] {
-		left: 20px;
-	}
-}
 
 /* Мобильные устройства (480px и менее) */
 @media (max-width: 480px) {

@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="bg-[#1A1A1A] border border-[#2A2A2A] text-[#E8ECF0] p-6 max-w-md font-medium rounded-lg shadow-2xl max-h-[500px] overflow-y-auto"
+		class="bg-[#1A1A1A] border border-[#2A2A2A] text-[#E8ECF0] p-6 max-w-md font-medium rounded-lg shadow-2xl max-h-[200px] overflow-y-scroll"
 	>
 		<!-- Main Categories -->
 		<div class="space-y-4">
@@ -9,9 +9,11 @@
 				:key="blockIndex"
 			>
 				<!-- Category Header -->
-				<div class="flex items-center justify-between mb-3">
+				<div
+					@click="toggleCategory(blockIndex)"
+					class="flex items-center justify-between mb-3 px-3"
+				>
 					<h2
-						@click="toggleCategory(blockIndex)"
 						class="text-lg font-semibold flex items-center gap-2 cursor-pointer hover:text-[#E67009] transition-colors duration-200"
 					>
 						{{ serviceBlock.title }}
@@ -61,18 +63,20 @@
 							<div
 								class="flex justify-between items-center py-2 px-3 rounded hover:bg-[#2A2A2A] transition-all duration-200 group"
 							>
-								<div class="flex items-center gap-2">
+								<div
+									class="flex items-center justify-between gap-2"
+								>
 									<span
 										class="text-sm group-hover:text-white transition-colors duration-200"
 									>
 										{{ service.label }}
 									</span>
 								</div>
-								<span
-									class="text-[#E67009] font-medium group-hover:scale-105 transition-transform duration-200"
+								<div
+									class="text-[#E67009] text-sm text-end w-[80px] whitespace-nowrap font-medium group-hover:scale-105 transition-transform duration-200"
 								>
 									{{ service.price }}
-								</span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -169,9 +173,9 @@ const toggleCategory = (categoryIndex: number) => {
 
 /* Планшеты (1024px и менее) */
 @media (max-width: 1024px) {
-	.max-w-md {
+	/* .max-w-md {
 		max-width: 24rem;
-	}
+	} */
 
 	.p-6 {
 		padding: 1.25rem;
@@ -184,9 +188,9 @@ const toggleCategory = (categoryIndex: number) => {
 
 /* Малые планшеты (768px и менее) */
 @media (max-width: 768px) {
-	.max-w-md {
+	/* .max-w-md {
 		max-width: 20rem;
-	}
+	} */
 
 	.p-6 {
 		padding: 1rem;
@@ -221,9 +225,9 @@ const toggleCategory = (categoryIndex: number) => {
 
 /* Мобильные устройства (480px и менее) */
 @media (max-width: 480px) {
-	.max-w-md {
+	/* .max-w-md {
 		max-width: 18rem;
-	}
+	} */
 
 	.p-6 {
 		padding: 0.75rem;

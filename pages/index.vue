@@ -258,7 +258,7 @@
 				</div>
 
 				<!-- SLIDER ICON -->
-				<div
+				<!-- <div
 					class="absolute inset-0 flex items-center justify-center z-50"
 				>
 					<NuxtImg
@@ -271,7 +271,7 @@
 						height="60"
 						:lazy="false"
 					/>
-				</div>
+				</div> -->
 			</div>
 		</section>
 

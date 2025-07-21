@@ -435,7 +435,7 @@ export const protectMenu: IServicePriceGroup[] = [
 
 			{
 				label: 'Плівка',
-				isExpanded: false,
+				isExpanded: true,
 
 				subServices: [
 					{
@@ -512,7 +512,7 @@ export const protectMenu: IServicePriceGroup[] = [
 			},
 			{
 				label: 'Плівка',
-				isExpanded: false,
+				isExpanded: true,
 
 				subServices: [
 					{
@@ -590,7 +590,7 @@ export const protectMenu: IServicePriceGroup[] = [
 			},
 			{
 				label: 'Плівка',
-				isExpanded: false,
+				isExpanded: true,
 				subServices: [
 					{
 						label: 'Повне обклеювання авто',

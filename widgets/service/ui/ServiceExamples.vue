@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="fullExamplesContainer h-[650px] w-full max-w-[1600px] relative m-auto px-10"
+		class="fullExamplesContainer h-fit w-full max-w-[1600px] relative m-auto px-10"
 	>
 		<div
 			class="exampleImagesContainer mt-[-50px] flex justify-center items-center"
