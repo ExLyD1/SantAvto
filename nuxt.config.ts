@@ -38,7 +38,14 @@ export default defineNuxtConfig({
 						'Захист, детейлінг, фарбування авто і кузовні роботи',
 				},
 			],
-			link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+			link: [
+				{
+					rel: 'preload',
+					as: 'image',
+					type: 'image/png',
+					href: '/favicon.svg',
+				},
+			],
 		},
 	},
 

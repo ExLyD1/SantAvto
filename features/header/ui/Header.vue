@@ -16,6 +16,7 @@
 					:lazy="false"
 					format="webp"
 					loading="eager"
+					priority
 				/>
 			</NuxtLink>
 
@@ -43,6 +44,7 @@
 						:lazy="false"
 						alt="phone-icon"
 						format="webp"
+						priority
 					/>
 
 					<p class="text-xs sm:text-sm lg:text-base">Зв'язатись</p>
@@ -56,6 +58,7 @@
 					alt="menu-icon"
 					:lazy="false"
 					@click="toggleMenuModal"
+					priority
 				/>
 			</div>
 		</div>

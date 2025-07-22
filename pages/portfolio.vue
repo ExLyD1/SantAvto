@@ -7,11 +7,14 @@
 			v-cloak
 			class="initialSectionPortfolio h-[620px] relative z-0 bg-[#E8ECF0] overflow-hidden"
 		>
-			<img
-				src="/icons/bg-sant-avto.png"
-				class="absolute top-[170px] left-0 z-0"
-				alt=""
+			<NuxtImg
+				src="/icons/bg-sant-avto.webp"
+				class="absolute top-[170px] left-0 z-0 w-full slowAppearing hidden md:block"
+				:lazy="false"
+				format="webp"
+				alt="Hintergrundbild"
 			/>
+
 			<div
 				class="max-w-[1600px] w-full m-auto pt-[150px] gap-[70px] flex flex-col z-10 relative"
 			>
@@ -55,6 +58,7 @@
 						:src="imageUrl"
 						alt="portfolio-example-work-image"
 						format="webp"
+						priority
 					/>
 				</span>
 
@@ -65,11 +69,12 @@
 				>
 					<NuxtImg
 						:lazy="false"
+						loading="eager"
 						height="50"
 						width="50"
 						src="/icons/instagram.svg"
 						alt="instagram-icon"
-						format="svg"
+						priority
 					/>
 				</div>
 			</div>
@@ -82,17 +87,23 @@
 				Instagram профілі
 			</h1>
 
-			<img
-				ref="videoRef"
-				:class="{ animateSlideInTop: isVideoVisible }"
-				src="/portfolio/inst-video.png"
-				class="mt-[40px] m-auto cursor-pointer"
-				alt=""
-			/>
+			<div ref="videoRef">
+				<NuxtImg
+					:class="{ animateSlideInTop: isVideoVisible }"
+					src="/portfolio/inst-video.png"
+					class="mt-[40px] m-auto cursor-pointer"
+					alt="portfolio-example-work-instagram-video"
+					width="1250"
+					height="703"
+					:lazy="false"
+					loading="eager"
+					format="webp"
+				/>
+			</div>
 		</section>
 
 		<!-- examples -->
-		<section v-cloak class="h-[802px] mt-[40px] mb-[60px] bg-[#E8ECF0]">
+		<section v-cloak class="h-[802px] mt-[40px] pb-[60px] bg-[#E8ECF0]">
 			<div
 				class="max-w-[1600px] w-full m-auto pt-[150px] gap-[70px] flex z-10 relative"
 			>
@@ -126,10 +137,13 @@
 						ref="firstImgRef"
 						:class="{ animateSlideInLeft: isFirstImgVisible }"
 					>
-						<img
+						<NuxtImg
 							src="/portfolio/first.png"
 							class="h-[501.88px] w-[401.32px] object-cover"
-							alt=""
+							alt="prortfolio-example-first-image"
+							:lazy="false"
+							loading="eager"
+							format="webp"
 						/>
 					</div>
 
@@ -147,10 +161,13 @@
 							</p>
 						</div>
 
-						<img
+						<NuxtImg
 							class="w-[400.6px] h-[396.88px] object-cover"
 							src="/portfolio/second.png"
-							alt=""
+							alt="prortfolio-example-second-image"
+							:lazy="false"
+							loading="eager"
+							format="webp"
 						/>
 					</div>
 				</div>
@@ -437,7 +454,7 @@ const isSecondImgVisible = useVisibility(
 	}
 
 	/* Скрытие фонового изображения */
-	img[src='/icons/bg-sant-avto.png'] {
+	img[src='/icons/bg-sant-avto.webp'] {
 		display: none;
 	}
 }

@@ -137,12 +137,15 @@
 									>
 										<div
 											@click="toggleCheckBox"
-											class="checkboxField w-[30px] h-[24px] rounded-full flex items-center justify-center cursor-pointer border border-[#232323]"
+											class="checkboxField w-[30px] h-[24px] rounded-full flex items-center justify-center cursor-pointer border border-[#232323] select-none"
 										>
-											<img
+											<NuxtImg
 												v-show="form.isCheckedBox"
 												src="/icons/checked.png"
 												alt="checkbox-checked"
+												:lazy="false"
+												loading="eager"
+												class="select-none"
 											/>
 										</div>
 										<span

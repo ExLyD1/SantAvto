@@ -5,9 +5,11 @@
 		<img
 			ref="bgRef"
 			:class="{ slowAppearing: isBgVisible }"
-			src="/icons/bg-sant-avto.png"
-			class="absolute top-[170px] left-0 z-0"
-			alt=""
+			src="/public/icons/bg-sant-avto.png"
+			class="bgImage absolute top-[170px] left-0 z-0"
+			alt="bg-santavot-image"
+			fetchpriority="high"
+			loading="eager"
 		/>
 
 		<div
@@ -184,6 +186,9 @@ const isBgVisible = useVisibility(bgRef, {
 
 	/* Скрытие фонового изображения */
 	img[src='/icons/bg-sant-avto.png'] {
+		display: none;
+	}
+	.bgImage {
 		display: none;
 	}
 }

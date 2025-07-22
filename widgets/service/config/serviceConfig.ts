@@ -60,7 +60,7 @@ export const detailingMenu: IServiceMenu[] = [
 		services: [
 			{
 				label: 'Повний комплекс хімчистки авто',
-				price: '120 $',
+				price: '5000 грн',
 			},
 			{
 				label: 'Хімчистка підлоги / стелі салону',
@@ -102,11 +102,11 @@ export const detailingMenu: IServiceMenu[] = [
 			},
 			{
 				label: 'Косметичне полірування',
-				price: '120 $',
+				price: '5000 грн',
 			},
 			{
 				label: 'Відновлювальне полірування',
-				price: '250 $',
+				price: '10400 грн',
 			},
 			{
 				label: 'Полірування салонного глянцю',
@@ -139,7 +139,7 @@ export const wrenchMenu: IServiceMenu[] = [
 			},
 			{
 				label: 'Шумоізоляція',
-				price: '1500 $',
+				price: '62500 грн',
 			},
 			{
 				label: 'Рихтування',
@@ -147,7 +147,7 @@ export const wrenchMenu: IServiceMenu[] = [
 			},
 			{
 				label: 'Фарбування + арматурні роботи для окремої деталі',
-				price: '150 $',
+				price: '6200 грн',
 			},
 		],
 	},
@@ -160,11 +160,11 @@ export const protectMenu: IServiceMenu[] = [
 		services: [
 			{
 				label: 'Кераміка',
-				price: '175 $',
+				price: '7200 грн',
 			},
 			{
 				label: 'Нанокераміка',
-				price: '175 $',
+				price: '7200 грн',
 			},
 			{
 				label: 'Антидощ',
@@ -172,7 +172,7 @@ export const protectMenu: IServiceMenu[] = [
 			},
 			{
 				label: 'Антикор',
-				price: '800 $',
+				price: '33300 грн',
 			},
 			{
 				label: 'Твердий віск',
@@ -186,15 +186,15 @@ export const protectMenu: IServiceMenu[] = [
 		services: [
 			{
 				label: 'Повне обклеювання авто',
-				price: '2500 $',
+				price: '104200 грн',
 			},
 			{
 				label: 'Захисна плівка-смужка на дах',
-				price: '50 $',
+				price: '2000 грн',
 			},
 			{
 				label: 'Захисна плівка на фари',
-				price: '100 $',
+				price: '4100 грн',
 			},
 			{
 				label: 'Захисна плівка на дзеркала',
@@ -210,7 +210,7 @@ export const protectMenu: IServiceMenu[] = [
 			},
 			{
 				label: 'Захисна смужка на задній бампер',
-				price: '50 $',
+				price: '2000 грн',
 			},
 			{
 				label: 'Захисна плівка на пороги у проємах (нижня частина)',
@@ -231,15 +231,15 @@ export const palleteMenu: IServiceMenu[] = [
 			},
 			{
 				label: 'Плівка полеуритан',
-				price: '2500 $',
+				price: '104200 грн',
 			},
 			{
 				label: 'Плівка гібридна',
-				price: '2400 $',
+				price: '100000 грн',
 			},
 			{
 				label: 'Плівка винилоновая',
-				price: '2200 $',
+				price: '91700 грн',
 			},
 			{
 				label: 'Покраска суппоротов без снятия',
@@ -250,7 +250,7 @@ export const palleteMenu: IServiceMenu[] = [
 				price: '350 грн',
 			},
 			{
-				label: 'Перетяжка потолков',
+				label: 'Перетягка потолков',
 				price: '300 грн',
 			},
 		],
@@ -277,7 +277,7 @@ export const palleteMenu: IServiceMenu[] = [
 			},
 			{
 				label: 'Тонування задніх стопів',
-				price: '100 $',
+				price: '4100 грн',
 			},
 			{
 				label: 'Антихром',

@@ -6,18 +6,16 @@
 		>
 			<!-- Background image - hidden on mobile, visible on tablet+ -->
 			<NuxtImg
-				src="/icons/bg-sant-avto.png"
+				src="/icons/bg-sant-avto.webp"
 				class="absolute top-[170px] left-0 z-0 w-full slowAppearing hidden md:block"
-				loading="eager"
 				:lazy="false"
 				format="webp"
 				alt="Hintergrundbild"
 			/>
 			<!-- Car image - responsive positioning and sizing -->
 			<NuxtImg
-				src="/icons/car.png"
+				src="/icons/car.webp"
 				class="absolute top-[50px] right-0 z-0 animateSlideInTop w-[180px] h-[330px] md:w-[280px] md:h-[510px] lg:w-[355px] lg:h-[651px] lg:top-[100px] hidden sm:block"
-				loading="eager"
 				:lazy="false"
 				format="webp"
 				alt="Auto-Icon"
@@ -61,6 +59,7 @@
 						loaging="eager"
 						height="48"
 						width="23"
+						priority
 					/>
 
 					<div class="text-sm lg:text-base">

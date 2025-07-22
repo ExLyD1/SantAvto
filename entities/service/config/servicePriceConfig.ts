@@ -46,66 +46,36 @@ export const detailingPriceMenu: IServicePriceGroup[] = [
 				subServices: [
 					{
 						label: 'Повний комплекс хімчистки авто',
-						price: '120 $',
+						price: '5000 грн',
 					},
 					{
 						label: 'Хімчистка підлоги / стелі салону',
 						price: '1000 грн',
 					},
-					{
-						label: 'Хімчистка дверної карти',
-						price: '500 грн',
-					},
-					{
-						label: 'Хімчистка заднього сидіння',
-						price: '800 грн',
-					},
-					{
-						label: 'Хімчистка переднього сидіння',
-						price: '400 грн',
-					},
-					{
-						label: 'Хімчистка багажного відсіку',
-						price: '800 грн',
-					},
-					{
-						label: 'Хімчистка торпеди',
-						price: '1200 грн',
-					},
-					{
-						label: 'Озонація салону',
-						price: '1500 грн',
-					},
+					{ label: 'Хімчистка дверної карти', price: '500 грн' },
+					{ label: 'Хімчистка заднього сидіння', price: '800 грн' },
+					{ label: 'Хімчистка переднього сидіння', price: '400 грн' },
+					{ label: 'Хімчистка багажного відсіку', price: '800 грн' },
+					{ label: 'Хімчистка торпеди', price: '1200 грн' },
+					{ label: 'Озонація салону', price: '1500 грн' },
 				],
 			},
 			{
 				label: 'Полірування',
 				isExpanded: true,
 				subServices: [
-					{
-						label: 'Локально (місце)',
-						price: '0 грн',
-					},
-					{
-						label: 'Косметичне полірування',
-						price: '120 $',
-					},
-					{
-						label: 'Відновлювальне полірування',
-						price: '250 $',
-					},
+					{ label: 'Локально (місце)', price: '500 грн' },
+					{ label: 'Косметичне полірування', price: '5000 грн' },
+					{ label: 'Відновлювальне полірування', price: '10400 грн' },
 					{
 						label: 'Полірування салонного глянцю',
 						price: '2500 грн',
 					},
 					{
 						label: 'Фара (шліфування + полірування)',
-						price: '0 грн',
-					},
-					{
-						label: 'Миття підкапотного простору',
 						price: '2500 грн',
 					},
+					{ label: 'Миття підкапотного простору', price: '2500 грн' },
 				],
 			},
 
@@ -131,73 +101,43 @@ export const detailingPriceMenu: IServicePriceGroup[] = [
 				subServices: [
 					{
 						label: 'Повний комплекс хімчистки авто',
-						price: '120$',
+						price: '5000 грн',
 					},
 					{
 						label: 'Хімчистка підлоги / стелі салону',
 						price: '1000 грн',
 					},
-					{
-						label: 'Хімчистка дверної карти',
-						price: '500 грн',
-					},
-					{
-						label: 'Хімчистка заднього сидіння',
-						price: '800 грн',
-					},
-					{
-						label: 'Хімчистка переднього сидіння',
-						price: '400 грн',
-					},
-					{
-						label: 'Хімчистка багажного відсіку',
-						price: '800 грн',
-					},
-					{
-						label: 'Хімчистка торпеди',
-						price: '1200 грн',
-					},
-					{
-						label: 'Озонація салону',
-						price: '1500 грн',
-					},
+					{ label: 'Хімчистка дверної карти', price: '500 грн' },
+					{ label: 'Хімчистка заднього сидіння', price: '800 грн' },
+					{ label: 'Хімчистка переднього сидіння', price: '400 грн' },
+					{ label: 'Хімчистка багажного відсіку', price: '800 грн' },
+					{ label: 'Хімчистка торпеди', price: '1200 грн' },
+					{ label: 'Озонація салону', price: '1500 грн' },
 				],
 			},
 			{
 				label: 'Полірування',
 				isExpanded: true,
 				subServices: [
-					{
-						label: 'Локально (місце)',
-						price: '0 грн',
-					},
-					{
-						label: 'Косметичне полірування',
-						price: '150 $',
-					},
-					{
-						label: 'Відновлювальне полірування',
-						price: '270 $',
-					},
+					{ label: 'Локально (місце)', price: '500 грн' },
+					{ label: 'Косметичне полірування', price: '6200 грн' },
+					{ label: 'Відновлювальне полірування', price: '11200 грн' },
 					{
 						label: 'Полірування салонного глянцю',
 						price: '2500 грн',
 					},
 					{
 						label: 'Фара (шліфування + полірування)',
-						price: '0 грн',
-					},
-					{
-						label: 'Миття підкапотного простору',
 						price: '2500 грн',
 					},
+					{ label: 'Миття підкапотного простору', price: '2500 грн' },
 				],
 			},
 
 			{
 				label: 'Миття підкапотноного простору',
 				isExpanded: false,
-				price: '0 грн',
+				price: '2500 грн',
 			},
 		],
 	},
@@ -216,73 +156,43 @@ export const detailingPriceMenu: IServicePriceGroup[] = [
 				subServices: [
 					{
 						label: 'Повний комплекс хімчистки авто',
-						price: '120$',
+						price: '5000 грн',
 					},
 					{
 						label: 'Хімчистка підлоги / стелі салону',
 						price: '1000 грн',
 					},
-					{
-						label: 'Хімчистка дверної карти',
-						price: '500 грн',
-					},
-					{
-						label: 'Хімчистка заднього сидіння',
-						price: '800 грн',
-					},
-					{
-						label: 'Хімчистка переднього сидіння',
-						price: '400 грн',
-					},
-					{
-						label: 'Хімчистка багажного відсіку',
-						price: '800 грн',
-					},
-					{
-						label: 'Хімчистка торпеди',
-						price: '1200 грн',
-					},
-					{
-						label: 'Озонація салону',
-						price: '1500 грн',
-					},
+					{ label: 'Хімчистка дверної карти', price: '500 грн' },
+					{ label: 'Хімчистка заднього сидіння', price: '800 грн' },
+					{ label: 'Хімчистка переднього сидіння', price: '400 грн' },
+					{ label: 'Хімчистка багажного відсіку', price: '800 грн' },
+					{ label: 'Хімчистка торпеди', price: '1200 грн' },
+					{ label: 'Озонація салону', price: '1500 грн' },
 				],
 			},
 			{
 				label: 'Полірування',
 				isExpanded: true,
 				subServices: [
-					{
-						label: 'Локально (місце)',
-						price: '0 грн',
-					},
-					{
-						label: 'Косметичне полірування',
-						price: '170 $',
-					},
-					{
-						label: 'Відновлювальне полірування',
-						price: '290 $',
-					},
+					{ label: 'Локально (місце)', price: '500 грн' },
+					{ label: 'Косметичне полірування', price: '7000 грн' },
+					{ label: 'Відновлювальне полірування', price: '12000 грн' },
 					{
 						label: 'Полірування салонного глянцю',
 						price: '2500 грн',
 					},
 					{
 						label: 'Фара (шліфування + полірування)',
-						price: '0 грн',
-					},
-					{
-						label: 'Миття підкапотного простору',
 						price: '2500 грн',
 					},
+					{ label: 'Миття підкапотного простору', price: '2500 грн' },
 				],
 			},
 
 			{
 				label: 'Миття підкапотноного простору',
 				isExpanded: false,
-				price: '0 грн',
+				price: '2500 грн',
 			},
 		],
 	},
@@ -316,13 +226,10 @@ export const wrenchMenu: IServicePriceGroup[] = [
 				label: 'Фарбування',
 				isExpanded: true,
 				subServices: [
-					{
-						label: 'Рихтування',
-						price: 'Договірна ціна',
-					},
+					{ label: 'Рихтування', price: 'Договірна ціна' },
 					{
 						label: 'Фарбування + арматурні роботи для окремої деталі',
-						price: '150 $',
+						price: '6200 грн',
 					},
 				],
 			},
@@ -355,13 +262,10 @@ export const wrenchMenu: IServicePriceGroup[] = [
 				label: 'Фарбування',
 				isExpanded: true,
 				subServices: [
-					{
-						label: 'Рихтування',
-						price: 'Договірна ціна',
-					},
+					{ label: 'Рихтування', price: 'Договірна ціна' },
 					{
 						label: 'Фарбування + арматурні роботи для окремої деталі',
-						price: '150 $',
+						price: '6200 грн',
 					},
 				],
 			},
@@ -395,13 +299,10 @@ export const wrenchMenu: IServicePriceGroup[] = [
 				label: 'Фарбування',
 				isExpanded: true,
 				subServices: [
-					{
-						label: 'Рихтування',
-						price: 'Договірна ціна',
-					},
+					{ label: 'Рихтування', price: 'Договірна ціна' },
 					{
 						label: 'Фарбування + арматурні роботи для окремої деталі',
-						price: '150 $',
+						price: '6200 грн',
 					},
 				],
 			},
@@ -418,69 +319,31 @@ export const protectMenu: IServicePriceGroup[] = [
 		type: 'sedan',
 		serviceType: 'protect',
 		services: [
-			{
-				label: 'Кераміка',
-				price: '175 $',
-				isExpanded: false,
-			},
-			{
-				label: 'Нанокераміка',
-				price: '175 $',
-				isExpanded: false,
-			},
-			{
-				label: 'Шумоізоляція',
-				price: '1500 $',
-				isExpanded: false,
-			},
-			{
-				label: 'Антидощ',
-				price: '1500 грн',
-				isExpanded: false,
-			},
-			{
-				label: 'Антикор',
-				price: '800 $',
-				isExpanded: false,
-			},
-			{
-				label: 'Твердий віск',
-				price: '500 грн',
-				isExpanded: false,
-			},
-
+			{ label: 'Кераміка', price: '6300 грн', isExpanded: false },
+			{ label: 'Нанокераміка', price: '6300 грн', isExpanded: false },
+			{ label: 'Шумоізоляція', price: '54000 грн', isExpanded: false },
+			{ label: 'Антидощ', price: '1500 грн', isExpanded: false },
+			{ label: 'Антикор', price: '28800 грн', isExpanded: false },
+			{ label: 'Твердий віск', price: '500 грн', isExpanded: false },
 			{
 				label: 'Плівка',
 				isExpanded: true,
-
 				subServices: [
-					{
-						label: 'Повне обклеювання авто',
-						price: '2500 $',
-					},
+					{ label: 'Повне обклеювання авто', price: '90000 грн' },
 					{
 						label: 'Захисна плівка-смужка на дах',
-						price: '50 $',
-					},
-					{
-						label: 'Захисна плівка на фари',
-						price: '100 $',
-					},
-					{
-						label: 'Захисна плівка на дзеркала',
-						price: '3000 грн',
-					},
-					{
-						label: 'Захисна плівка під ручками',
 						price: '1800 грн',
 					},
+					{ label: 'Захисна плівка на фари', price: '3600 грн' },
+					{ label: 'Захисна плівка на дзеркала', price: '3000 грн' },
+					{ label: 'Захисна плівка під ручками', price: '1800 грн' },
 					{
 						label: 'Захисна плівка на кант дверей',
 						price: '1500 грн',
 					},
 					{
 						label: 'Захисна смужка на задній бампер',
-						price: '50 $',
+						price: '1800 грн',
 					},
 					{
 						label: 'Захисна плівка на пороги у проємах (нижня частина)',
@@ -498,68 +361,31 @@ export const protectMenu: IServicePriceGroup[] = [
 		type: 'outdoor',
 		serviceType: 'protect',
 		services: [
-			{
-				label: 'Кераміка',
-				price: '200 $',
-				isExpanded: false,
-			},
-			{
-				label: 'Нанокераміка',
-				price: '200 $',
-				isExpanded: false,
-			},
-			{
-				label: 'Шумоізоляція',
-				price: '1800 $',
-				isExpanded: false,
-			},
-			{
-				label: 'Антидощ',
-				price: '1500 грн',
-				isExpanded: false,
-			},
-			{
-				label: 'Антикор',
-				price: '800 $',
-				isExpanded: false,
-			},
-			{
-				label: 'Твердий віск',
-				price: '500 грн',
-				isExpanded: false,
-			},
+			{ label: 'Кераміка', price: '7200 грн', isExpanded: false },
+			{ label: 'Нанокераміка', price: '7200 грн', isExpanded: false },
+			{ label: 'Шумоізоляція', price: '64800 грн', isExpanded: false },
+			{ label: 'Антидощ', price: '1500 грн', isExpanded: false },
+			{ label: 'Антикор', price: '28800 грн', isExpanded: false },
+			{ label: 'Твердий віск', price: '500 грн', isExpanded: false },
 			{
 				label: 'Плівка',
 				isExpanded: true,
-
 				subServices: [
-					{
-						label: 'Повне обклеювання авто',
-						price: '2800 $',
-					},
+					{ label: 'Повне обклеювання авто', price: '100800 грн' },
 					{
 						label: 'Захисна плівка-смужка на дах',
-						price: '50 $',
-					},
-					{
-						label: 'Захисна плівка на фари',
-						price: '100 $',
-					},
-					{
-						label: 'Захисна плівка на дзеркала',
-						price: '3000 грн',
-					},
-					{
-						label: 'Захисна плівка під ручками',
 						price: '1800 грн',
 					},
+					{ label: 'Захисна плівка на фари', price: '3600 грн' },
+					{ label: 'Захисна плівка на дзеркала', price: '3000 грн' },
+					{ label: 'Захисна плівка під ручками', price: '1800 грн' },
 					{
 						label: 'Захисна плівка на кант дверей',
 						price: '1500 грн',
 					},
 					{
 						label: 'Захисна смужка на задній бампер',
-						price: '50 $',
+						price: '1800 грн',
 					},
 					{
 						label: 'Захисна плівка на пороги у проємах (нижня частина)',
@@ -569,7 +395,6 @@ export const protectMenu: IServicePriceGroup[] = [
 			},
 		],
 	},
-
 	{
 		title: 'Пікап',
 		imgWidth: 213,
@@ -578,67 +403,31 @@ export const protectMenu: IServicePriceGroup[] = [
 		type: 'picap',
 		serviceType: 'protect',
 		services: [
-			{
-				label: 'Кераміка',
-				price: '230 $',
-				isExpanded: false,
-			},
-			{
-				label: 'Нанокераміка',
-				price: '230 $',
-				isExpanded: false,
-			},
-			{
-				label: 'Шумоізоляція',
-				price: '2000 $',
-				isExpanded: false,
-			},
-			{
-				label: 'Антидощ',
-				price: '1500 грн',
-				isExpanded: false,
-			},
-			{
-				label: 'Антикор',
-				price: '800 $',
-				isExpanded: false,
-			},
-			{
-				label: 'Твердий віск',
-				price: '500 грн',
-				isExpanded: false,
-			},
+			{ label: 'Кераміка', price: '8280 грн', isExpanded: false },
+			{ label: 'Нанокераміка', price: '8280 грн', isExpanded: false },
+			{ label: 'Шумоізоляція', price: '72000 грн', isExpanded: false },
+			{ label: 'Антидощ', price: '1500 грн', isExpanded: false },
+			{ label: 'Антикор', price: '28800 грн', isExpanded: false },
+			{ label: 'Твердий віск', price: '500 грн', isExpanded: false },
 			{
 				label: 'Плівка',
 				isExpanded: true,
 				subServices: [
-					{
-						label: 'Повне обклеювання авто',
-						price: '3200 $',
-					},
+					{ label: 'Повне обклеювання авто', price: '115200 грн' },
 					{
 						label: 'Захисна плівка-смужка на дах',
-						price: '50 $',
-					},
-					{
-						label: 'Захисна плівка на фари',
-						price: '100 $',
-					},
-					{
-						label: 'Захисна плівка на дзеркала',
-						price: '3000 грн',
-					},
-					{
-						label: 'Захисна плівка під ручками',
 						price: '1800 грн',
 					},
+					{ label: 'Захисна плівка на фари', price: '3600 грн' },
+					{ label: 'Захисна плівка на дзеркала', price: '3000 грн' },
+					{ label: 'Захисна плівка під ручками', price: '1800 грн' },
 					{
 						label: 'Захисна плівка на кант дверей',
 						price: '1500 грн',
 					},
 					{
 						label: 'Захисна смужка на задній бампер',
-						price: '50 $',
+						price: '1800 грн',
 					},
 					{
 						label: 'Захисна плівка на пороги у проємах (нижня частина)',
@@ -663,22 +452,10 @@ export const palleteMenu: IServicePriceGroup[] = [
 				label: 'Фарбування',
 				isExpanded: true,
 				subServices: [
-					{
-						label: 'Заміна кольору',
-						price: '200 грн',
-					},
-					{
-						label: 'Плівка полеуритан',
-						price: '2500 $',
-					},
-					{
-						label: 'Плівка гібридна',
-						price: '2400 $',
-					},
-					{
-						label: 'Плівка винилоновая',
-						price: '2200 $',
-					},
+					{ label: 'Заміна кольору', price: '200 грн' },
+					{ label: 'Плівка полеуритан', price: '105000 грн' }, // ~104225
+					{ label: 'Плівка гібридна', price: '100000 грн' }, // ~100056
+					{ label: 'Плівка винилоновая', price: '92000 грн' }, // ~91718
 					{
 						label: 'Покраска суппоротов без снятия',
 						price: '6000 грн',
@@ -687,37 +464,18 @@ export const palleteMenu: IServicePriceGroup[] = [
 						label: 'Перетягивание | покраска кожи седенья',
 						price: '350 грн',
 					},
-					{
-						label: 'Перетяжка потолков',
-						price: '300 грн',
-					},
+					{ label: 'Перетяжка потолков', price: '300 грн' },
 				],
 			},
-
 			{
 				label: 'Тонування',
 				isExpanded: true,
 				subServices: [
-					{
-						label: 'Повне тонування',
-						price: '7000 грн',
-					},
-					{
-						label: 'Тонування бокового скла',
-						price: '1100 грн',
-					},
-					{
-						label: 'Тонування лобового скла',
-						price: '2500 грн',
-					},
-					{
-						label: 'Тонування заднього скла',
-						price: '2500 грн',
-					},
-					{
-						label: 'Тонування задніх стопів',
-						price: '100 $',
-					},
+					{ label: 'Повне тонування', price: '7000 грн' },
+					{ label: 'Тонування бокового скла', price: '1100 грн' },
+					{ label: 'Тонування лобового скла', price: '2500 грн' },
+					{ label: 'Тонування заднього скла', price: '2500 грн' },
+					{ label: 'Тонування задніх стопів', price: '4100 грн' }, // ~4169
 				],
 			},
 			{
@@ -727,7 +485,6 @@ export const palleteMenu: IServicePriceGroup[] = [
 			},
 		],
 	},
-
 	{
 		title: 'Позашляховик',
 		imgWidth: 213,
@@ -740,22 +497,10 @@ export const palleteMenu: IServicePriceGroup[] = [
 				label: 'Фарбування',
 				isExpanded: true,
 				subServices: [
-					{
-						label: 'Заміна кольору',
-						price: '200 грн',
-					},
-					{
-						label: 'Плівка полеуритан',
-						price: '2800 $',
-					},
-					{
-						label: 'Плівка гібридна',
-						price: '2700 $',
-					},
-					{
-						label: 'Плівка винилоновая',
-						price: '2400 $',
-					},
+					{ label: 'Заміна кольору', price: '200 грн' },
+					{ label: 'Плівка полеуритан', price: '117000 грн' }, // ~116732
+					{ label: 'Плівка гібридна', price: '113000 грн' }, // ~112563
+					{ label: 'Плівка винилоновая', price: '100000 грн' }, // ~100056
 					{
 						label: 'Покраска суппоротов без снятия',
 						price: '6000 грн',
@@ -764,37 +509,18 @@ export const palleteMenu: IServicePriceGroup[] = [
 						label: 'Перетягивание | покраска кожи седенья',
 						price: '350 грн',
 					},
-					{
-						label: 'Перетяжка потолков',
-						price: '300 грн',
-					},
+					{ label: 'Перетяжка потолков', price: '300 грн' },
 				],
 			},
-
 			{
 				label: 'Тонування',
 				isExpanded: true,
 				subServices: [
-					{
-						label: 'Повне тонування',
-						price: '7000 грн',
-					},
-					{
-						label: 'Тонування бокового скла',
-						price: '1100 грн',
-					},
-					{
-						label: 'Тонування лобового скла',
-						price: '2500 грн',
-					},
-					{
-						label: 'Тонування заднього скла',
-						price: '2500 грн',
-					},
-					{
-						label: 'Тонування задніх стопів',
-						price: '100 $',
-					},
+					{ label: 'Повне тонування', price: '7000 грн' },
+					{ label: 'Тонування бокового скла', price: '1100 грн' },
+					{ label: 'Тонування лобового скла', price: '2500 грн' },
+					{ label: 'Тонування заднього скла', price: '2500 грн' },
+					{ label: 'Тонування задніх стопів', price: '4100 грн' }, // ~4169
 				],
 			},
 			{
@@ -804,7 +530,6 @@ export const palleteMenu: IServicePriceGroup[] = [
 			},
 		],
 	},
-
 	{
 		title: 'Пікап',
 		imgWidth: 213,
@@ -817,22 +542,10 @@ export const palleteMenu: IServicePriceGroup[] = [
 				label: 'Фарбування',
 				isExpanded: true,
 				subServices: [
-					{
-						label: 'Заміна кольору',
-						price: '200 грн',
-					},
-					{
-						label: 'Плівка полеуритан',
-						price: '3000 $',
-					},
-					{
-						label: 'Плівка гібридна',
-						price: '2900 $',
-					},
-					{
-						label: 'Плівка винилоновая',
-						price: '2600 $',
-					},
+					{ label: 'Заміна кольору', price: '200 грн' },
+					{ label: 'Плівка полеуритан', price: '125000 грн' }, // ~125070
+					{ label: 'Плівка гібридна', price: '121000 грн' }, // ~120901
+					{ label: 'Плівка винилоновая', price: '109000 грн' }, // ~108394
 					{
 						label: 'Покраска суппоротов без снятия',
 						price: '6000 грн',
@@ -841,37 +554,18 @@ export const palleteMenu: IServicePriceGroup[] = [
 						label: 'Перетягивание | покраска кожи седенья',
 						price: '350 грн',
 					},
-					{
-						label: 'Перетяжка потолков',
-						price: '300 грн',
-					},
+					{ label: 'Перетяжка потолков', price: '300 грн' },
 				],
 			},
-
 			{
 				label: 'Тонування',
 				isExpanded: true,
 				subServices: [
-					{
-						label: 'Повне тонування',
-						price: '7000 грн',
-					},
-					{
-						label: 'Тонування бокового скла',
-						price: '1100 грн',
-					},
-					{
-						label: 'Тонування лобового скла',
-						price: '2500 грн',
-					},
-					{
-						label: 'Тонування заднього скла',
-						price: '2500 грн',
-					},
-					{
-						label: 'Тонування задніх стопів',
-						price: '100 $',
-					},
+					{ label: 'Повне тонування', price: '7000 грн' },
+					{ label: 'Тонування бокового скла', price: '1100 грн' },
+					{ label: 'Тонування лобового скла', price: '2500 грн' },
+					{ label: 'Тонування заднього скла', price: '2500 грн' },
+					{ label: 'Тонування задніх стопів', price: '4100 грн' }, // ~4169
 				],
 			},
 			{

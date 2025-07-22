@@ -14,6 +14,8 @@
 					height="650"
 					width="533"
 					:lazy="false"
+					loading="eager"
+					priority
 					class="object-cover min-w-0 min-h-0 exampleImage"
 					:src="imageUrl"
 					alt="service-example-type-image"

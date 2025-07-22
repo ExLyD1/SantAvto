@@ -5,20 +5,60 @@
 		<section
 			class="h-[620px] relative z-0 bg-[#E8ECF0] text-[#232323] overflow-hidden"
 		>
-			<img
+			<div
 				ref="bgRef"
 				:class="{ slowAppearing: isBgVisible }"
-				src="/icons/bg-sant-avto.webp"
-				class="absolute top-[170px] left-0 z-0"
-				alt=""
-			/>
-			<img
+				class="bgImage absolute top-[170px] left-0 z-0"
+			>
+				<img
+					src="/public/icons/bg-sant-avto.webp"
+					alt="bg-santavto-image"
+					:lazy="false"
+					class="w-full h-auto"
+				/>
+			</div>
+
+			<!-- <div
+				ref="bgRef"
+				:class="{ slowAppearing: isBgVisible }"
+				class="bgImage absolute top-[170px] left-0 z-0 w-full slowAppearing hidden md:block"
+			>
+				<NuxtImg
+					src="/icons/bg-sant-avto.webp"
+					loading="eager"
+					:lazy="false"
+					format="webp"
+					alt="Hintergrundbild"
+					priority
+					preload
+				/>
+			</div> -->
+
+			<div
 				ref="carRef"
 				:class="{ animateSlideInRight: isCarVisible }"
-				src="/icons/bg-service.webp"
+				class="bgImage absolute top-[250px] right-[100px] z-0"
+			>
+				<NuxtImg
+					src="/icons/bg-service.webp"
+					alt="car-image-bg"
+					:lazy="false"
+					loading="eager"
+					priority
+					height="332"
+					width="254"
+				/>
+			</div>
+
+			<!-- <img
+				ref="carRef"
+				:class="{ animateSlideInRight: isCarVisible }"
 				class="absolute top-[250px] right-[100px] z-0"
-				alt=""
-			/>
+				src="/public/icons/bg-service.webp"
+				alt="car-image-bg"
+				height="332"
+				width="254"
+			/> -->
 
 			<div
 				class="flex justify-between max-w-[1600px] w-full m-auto pt-[150px] z-10 relative"
@@ -258,6 +298,10 @@ const isVisibleList = elRefs.map(elRef =>
 	/* Скрытие фоновых изображений на мобильных */
 	img[src='/icons/bg-sant-avto.webp'],
 	img[src='/icons/bg-service.webp'] {
+		display: none;
+	}
+
+	.bgImage {
 		display: none;
 	}
 }
