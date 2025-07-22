@@ -8,14 +8,14 @@
 			<img
 				ref="bgRef"
 				:class="{ slowAppearing: isBgVisible }"
-				src="/icons/bg-sant-avto.png"
+				src="/icons/bg-sant-avto.webp"
 				class="absolute top-[170px] left-0 z-0"
 				alt=""
 			/>
 			<img
 				ref="carRef"
 				:class="{ animateSlideInRight: isCarVisible }"
-				src="/icons/bg-service.png"
+				src="/icons/bg-service.webp"
 				class="absolute top-[250px] right-[100px] z-0"
 				alt=""
 			/>
@@ -256,8 +256,8 @@ const isVisibleList = elRefs.map(elRef =>
 	}
 
 	/* Скрытие фоновых изображений на мобильных */
-	img[src='/icons/bg-sant-avto.png'],
-	img[src='/icons/bg-service.png'] {
+	img[src='/icons/bg-sant-avto.webp'],
+	img[src='/icons/bg-service.webp'] {
 		display: none;
 	}
 }

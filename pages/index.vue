@@ -10,7 +10,7 @@
 				class="absolute top-[170px] left-0 z-0 w-full slowAppearing hidden md:block"
 				loading="eager"
 				:lazy="false"
-				format="png"
+				format="webp"
 				alt="Hintergrundbild"
 			/>
 			<!-- Car image - responsive positioning and sizing -->
@@ -19,7 +19,7 @@
 				class="absolute top-[50px] right-0 z-0 animateSlideInTop w-[180px] h-[330px] md:w-[280px] md:h-[510px] lg:w-[355px] lg:h-[651px] lg:top-[100px] hidden sm:block"
 				loading="eager"
 				:lazy="false"
-				format="png"
+				format="webp"
 				alt="Auto-Icon"
 			/>
 
@@ -57,6 +57,10 @@
 						src="/icons/mouse.svg"
 						alt="computer-mouse-icon"
 						class="hidden lg:block"
+						:lazy="false"
+						loaging="eager"
+						height="48"
+						width="23"
 					/>
 
 					<div class="text-sm lg:text-base">
@@ -584,17 +588,17 @@ const afterImgRef = ref<HTMLElement | null>(null)
 }
 
 .exp_bg_img {
-	background-image: url('/icons/experience-bg-img.png');
+	background-image: url('/icons/experience-bg-img.webp');
 	background-repeat: no-repeat;
 }
 
 .beforeImg {
-	background-image: url('/icons/before.png');
+	background-image: url('/icons/before.webp');
 	background-repeat: no-repeat;
 }
 
 .afterImg {
-	background-image: url('/icons/after.png');
+	background-image: url('/icons/after.webp');
 	background-repeat: no-repeat;
 }
 

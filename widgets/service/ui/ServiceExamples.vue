@@ -17,6 +17,7 @@
 					class="object-cover min-w-0 min-h-0 exampleImage"
 					:src="imageUrl"
 					alt="service-example-type-image"
+					format="webp"
 				/>
 			</span>
 		</div>

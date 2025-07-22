@@ -53,6 +53,8 @@
 						:lazy="false"
 						class="object-cover min-w-0 min-h-0"
 						:src="imageUrl"
+						alt="portfolio-example-work-image"
+						format="webp"
 					/>
 				</span>
 
@@ -66,7 +68,8 @@
 						height="50"
 						width="50"
 						src="/icons/instagram.svg"
-						alt=""
+						alt="instagram-icon"
+						format="svg"
 					/>
 				</div>
 			</div>

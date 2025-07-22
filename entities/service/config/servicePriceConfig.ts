@@ -12,6 +12,8 @@ export interface ISubServicePrice {
 
 export interface IServicePriceGroup {
 	imgUrl: string
+	imgWidth: number
+	imgHeight: number
 	title: string
 	type: 'sedan' | 'outdoor' | 'picap'
 	serviceType: 'detailing' | 'wrench' | 'protect' | 'pallete'
@@ -32,6 +34,8 @@ export interface IServiceMenuItem {
 export const detailingPriceMenu: IServicePriceGroup[] = [
 	{
 		title: 'Седан',
+		imgWidth: 213,
+		imgHeight: 67,
 		imgUrl: '/service-examples/sedan.png',
 		type: 'sedan',
 		serviceType: 'detailing',
@@ -115,6 +119,8 @@ export const detailingPriceMenu: IServicePriceGroup[] = [
 
 	{
 		title: 'Позашляховик',
+		imgWidth: 213,
+		imgHeight: 82,
 		imgUrl: '/service-examples/outdoor.png',
 		type: 'outdoor',
 		serviceType: 'detailing',
@@ -198,6 +204,8 @@ export const detailingPriceMenu: IServicePriceGroup[] = [
 
 	{
 		title: 'Пікап',
+		imgWidth: 213,
+		imgHeight: 75,
 		imgUrl: '/service-examples/picap.png',
 		type: 'picap',
 		serviceType: 'detailing',
@@ -283,6 +291,8 @@ export const detailingPriceMenu: IServicePriceGroup[] = [
 export const wrenchMenu: IServicePriceGroup[] = [
 	{
 		title: 'Седан',
+		imgWidth: 213,
+		imgHeight: 67,
 		imgUrl: '/service-examples/sedan.png',
 		type: 'sedan',
 		serviceType: 'wrench',
@@ -320,6 +330,8 @@ export const wrenchMenu: IServicePriceGroup[] = [
 	},
 	{
 		title: 'Позашляховик',
+		imgWidth: 213,
+		imgHeight: 82,
 		imgUrl: '/service-examples/outdoor.png',
 		type: 'outdoor',
 		serviceType: 'wrench',
@@ -358,6 +370,8 @@ export const wrenchMenu: IServicePriceGroup[] = [
 
 	{
 		title: 'Пікап',
+		imgWidth: 213,
+		imgHeight: 75,
 		imgUrl: '/service-examples/picap.png',
 		type: 'picap',
 		serviceType: 'wrench',
@@ -398,6 +412,8 @@ export const wrenchMenu: IServicePriceGroup[] = [
 export const protectMenu: IServicePriceGroup[] = [
 	{
 		title: 'Седан',
+		imgWidth: 213,
+		imgHeight: 67,
 		imgUrl: '/service-examples/sedan.png',
 		type: 'sedan',
 		serviceType: 'protect',
@@ -476,6 +492,8 @@ export const protectMenu: IServicePriceGroup[] = [
 	},
 	{
 		title: 'Позашляховик',
+		imgWidth: 213,
+		imgHeight: 82,
 		imgUrl: '/service-examples/outdoor.png',
 		type: 'outdoor',
 		serviceType: 'protect',
@@ -554,6 +572,8 @@ export const protectMenu: IServicePriceGroup[] = [
 
 	{
 		title: 'Пікап',
+		imgWidth: 213,
+		imgHeight: 75,
 		imgUrl: '/service-examples/picap.png',
 		type: 'picap',
 		serviceType: 'protect',
@@ -633,6 +653,8 @@ export const protectMenu: IServicePriceGroup[] = [
 export const palleteMenu: IServicePriceGroup[] = [
 	{
 		title: 'Седан',
+		imgWidth: 213,
+		imgHeight: 67,
 		imgUrl: '/service-examples/sedan.png',
 		type: 'sedan',
 		serviceType: 'pallete',
@@ -708,6 +730,8 @@ export const palleteMenu: IServicePriceGroup[] = [
 
 	{
 		title: 'Позашляховик',
+		imgWidth: 213,
+		imgHeight: 82,
 		imgUrl: '/service-examples/outdoor.png',
 		type: 'outdoor',
 		serviceType: 'pallete',
@@ -783,6 +807,8 @@ export const palleteMenu: IServicePriceGroup[] = [
 
 	{
 		title: 'Пікап',
+		imgWidth: 213,
+		imgHeight: 75,
 		imgUrl: '/service-examples/picap.png',
 		type: 'picap',
 		serviceType: 'pallete',

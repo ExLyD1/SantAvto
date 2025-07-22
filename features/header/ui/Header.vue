@@ -14,7 +14,7 @@
 					alt="logo-sant-avto-datiling-studio"
 					class="w-[100px] h-[36px] sm:w-[120px] sm:h-[43px] lg:w-[138px] lg:h-[50px]"
 					:lazy="false"
-					format="svg"
+					format="webp"
 					loading="eager"
 				/>
 			</NuxtLink>
@@ -42,6 +42,7 @@
 						class="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px] lg:w-[19px] lg:h-[19px]"
 						:lazy="false"
 						alt="phone-icon"
+						format="webp"
 					/>
 
 					<p class="text-xs sm:text-sm lg:text-base">Зв'язатись</p>
@@ -50,6 +51,7 @@
 				<!-- menu button - responsive sizing -->
 				<NuxtImg
 					src="/icons/menu.svg"
+					format="webp"
 					class="cursor-pointer w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] lg:w-[25px] lg:h-[25px]"
 					alt="menu-icon"
 					:lazy="false"

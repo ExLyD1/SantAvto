@@ -13,6 +13,7 @@
 				<NuxtImg
 					:lazy="false"
 					:src="service.asideImgUrl"
+					format="webp"
 					height="35"
 					width="35"
 					alt="service-type-icon"

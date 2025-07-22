@@ -29,6 +29,7 @@
 							alt="logo-sant-avto-datiling-studio"
 							class="w-[120px] sm:w-[140px] lg:w-auto"
 							:lazy="false"
+							format="webp"
 						/>
 					</NuxtLink>
 
@@ -82,6 +83,7 @@
 								class="h-[25px] w-[25px] sm:h-[28px] sm:w-[28px] lg:h-[30px] lg:w-[30px] cursor-pointer"
 								alt="footer-social-media-icon"
 								:lazy="false"
+								format="webp"
 							/>
 						</a>
 					</div>

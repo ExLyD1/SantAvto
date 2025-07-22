@@ -7,8 +7,11 @@
 		<div class="flex items-center justify-between">
 			<!-- author info - responsive sizing -->
 			<div class="flex items-center gap-2">
-				<img
+				<NuxtImg
 					:src="review.authorImg"
+					:lazy="false"
+					loading="eager"
+					format="svg"
 					alt="review-author-img"
 					class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full object-cover"
 				/>

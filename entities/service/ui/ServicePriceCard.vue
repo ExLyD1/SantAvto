@@ -1,11 +1,20 @@
 <template>
 	<div
-		class="h-fit w-[500px] flex flex-col! items-center justify-between p-12 border border-[#2A2A2A] text-white relative"
+		class="w-[500px] flex flex-col! items-center justify-between p-12 border border-[#2A2A2A] text-white relative"
+		v-bind="$attrs"
 		ref="cardRef"
 	>
 		<!-- car description / info -->
 		<div class="flex flex-col items-center gap-4 w-fit h-fit">
-			<img :src="serviceGroup.imgUrl" alt="" />
+			<NuxtImg
+				:src="serviceGroup.imgUrl"
+				:lazy="false"
+				loading="eager"
+				format="webp"
+				:width="serviceGroup.imgWidth"
+				:height="serviceGroup.imgHeight"
+				alt="service-price-group-image"
+			/>
 			<h1 class="text-[#E8ECF0] text-2xl">{{ serviceGroup.title }}</h1>
 		</div>
 

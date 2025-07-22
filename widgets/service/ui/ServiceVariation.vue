@@ -8,7 +8,7 @@
 			alt="service-variation-img"
 			class="serviceImg w-full lg:w-[360px] h-auto lg:h-[480px] object-cover flex-shrink-0"
 			:lazy="false"
-			format="png"
+			format="webp"
 			loading="eager"
 			priority
 			width="360"
