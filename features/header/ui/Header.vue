@@ -78,6 +78,15 @@ const isMenuModalOpen = ref<boolean>(false)
 const toggleMenuModal = () => {
 	isMenuModalOpen.value = !isMenuModalOpen.value
 }
+
+const route = useRoute()
+
+watch(
+	() => route.fullPath,
+	() => {
+		isMenuModalOpen.value = false
+	}
+)
 </script>
 
 <style scoped>

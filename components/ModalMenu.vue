@@ -40,14 +40,14 @@
 						>
 							Навігація
 						</h3>
-						<a
+						<NuxtLink
 							v-for="item in navigationItems"
 							:key="item.name"
-							:href="item.href"
+							:to="item.href"
 							class="flex items-center gap-3 py-3 px-4 text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground rounded-lg transition-all duration-200 hover:text-primary"
 						>
 							<span>{{ item.name }}</span>
-						</a>
+						</NuxtLink>
 					</nav>
 
 					<!-- Services -->
@@ -58,14 +58,14 @@
 							Послуги
 						</h3>
 						<nav class="space-y-1">
-							<a
+							<NuxtLink
 								v-for="item in serviceItems"
 								:key="item.name"
-								:href="item.href"
+								:to="item.href"
 								class="flex items-center gap-3 py-2.5 px-4 text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground rounded-lg transition-all duration-200 hover:text-primary"
 							>
 								<span>{{ item.name }}</span>
-							</a>
+							</NuxtLink>
 						</nav>
 					</div>
 
@@ -103,19 +103,17 @@
 						</h3>
 						<div class="space-y-2 px-2">
 							<a
-								href="#"
-								class="flex items-center gap-3 text-sidebar-foreground hover:text-primary transition-colors"
+								href="mailto:santavtodetailing@gmail.com"
+								class="flex items-center gap-3 text-sidebar-foreground transition-colors hover:text-primary"
 							>
-								<Instagram class="h-4 w-4" />
 								<span class="text-sm"
 									>santavtodetailing@gmail.com</span
 								>
 							</a>
 							<a
-								href="#"
-								class="flex items-center gap-3 text-sidebar-foreground hover:text-primary transition-colors"
+								href="mailto:santavtodetailing@gmail.com"
+								class="flex items-center gap-3 text-sidebar-foreground transition-colors hover:text-primary"
 							>
-								<Facebook class="h-4 w-4" />
 								<span class="text-sm"
 									>santavtodetailing@gmail.com</span
 								>
@@ -126,11 +124,12 @@
 
 				<!-- CTA -->
 				<div class="p-6 border-t border-sidebar-border">
-					<button
+					<NuxtLink
+						to="/contact"
 						class="w-full py-3 text-base font-semibold bg-primary text-white rounded-lg"
 					>
-						Request a Quote
-					</button>
+						Написати нам
+					</NuxtLink>
 				</div>
 			</div>
 		</div>
