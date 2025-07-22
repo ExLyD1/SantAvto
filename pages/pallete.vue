@@ -21,7 +21,7 @@ import { palleteImages } from '~/widgets/service/config/serviceExampleImages'
 import ServicePriceGroup from '~/widgets/service/ui/ServicePriceGroup.vue'
 import { palleteMenu } from '~/entities/service/config/servicePriceConfig'
 
-const palleteQuotient: string[] = ['Стайлінг h', 'Авто']
+const palleteQuotient: string[] = ['Стайлінг', 'Авто']
 const description =
 	'Стиль авто — це вираження індивідуальності. Ми змінюємо колір за допомогою плівок, тонуємо скло, прибираємо хром, створюючи образ, що вирізняється на дорозі. Кожна деталь працює на результат — естетичний, цілісний та захищений.'
 </script>

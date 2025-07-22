@@ -74,9 +74,11 @@
 					<div
 						class="flex items-center gap-[20px] sm:gap-[25px] w-full"
 					>
-						<a
+						<NuxtLink
+							target="_blank"
 							v-for="item in footerSocialMedia"
 							class="hover:opacity-80 transition-opacity"
+							:to="item.link"
 						>
 							<NuxtImg
 								:src="item.image_link"
@@ -85,7 +87,7 @@
 								:lazy="false"
 								format="webp"
 							/>
-						</a>
+						</NuxtLink>
 					</div>
 				</div>
 			</div>

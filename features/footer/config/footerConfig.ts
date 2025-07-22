@@ -30,18 +30,18 @@ export interface IFooterSocialMedia {
 export const footerSocialMedia: IFooterSocialMedia[] = [
 	{
 		image_link: '/icons/instagram.svg',
-		link: '/instagram.com',
+		link: 'https://www.instagram.com/sant_avto?igsh=MXdtMWFpczF5Z2V5MA%3D%3D&utm_source=qr',
 	},
 	{
 		image_link: '/icons/YouTube.png',
-		link: '/youtube.com',
+		link: 'https://youtube.com/@santavto?si=bINsRGf8FYXLXhAO',
 	},
 	{
 		image_link: '/icons/telegram.svg',
-		link: '/telegram.com',
+		link: 'https://t.me/SantAvto',
 	},
 	{
 		image_link: '/icons/tiktok.svg',
-		link: '/tiktok.com',
+		link: 'tiktok.com',
 	},
 ]

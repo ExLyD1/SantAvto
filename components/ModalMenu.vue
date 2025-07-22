@@ -9,19 +9,8 @@
 			<div
 				class="flex items-center justify-between p-6 border-b border-white"
 			>
-				<div class="flex items-center gap-3">
-					<div
-						class="w-8 h-8 bg-primary rounded-full flex items-center justify-center"
-					>
-						<span
-							class="text-primary-foreground font-bold text-sm text-[#ffffff]"
-							>SA</span
-						>
-					</div>
-					<span class="font-bold text-xl text-[#ffffff]"
-						>SantAvto</span
-					>
-				</div>
+				<NuxtImg height="70" width="175" src="/icons/logo_white.svg" />
+
 				<button
 					@click="emit('close')"
 					class="text-[#ffffff] hover:bg-sidebar-accent w-8 h-8 flex items-center justify-center cursor-pointer"
@@ -102,22 +91,19 @@
 							Слідкуйте за нами
 						</h3>
 						<div class="space-y-2 px-2">
-							<a
-								href="mailto:santavtodetailing@gmail.com"
-								class="flex items-center gap-3 text-sidebar-foreground transition-colors hover:text-primary"
+							<NuxtLink
+								to="https://youtube.com/@santavto?si=bINsRGf8FYXLXhAO"
+								target="_blank"
+								class="flex items-center gap-3 text-sidebar-foreground transition-colors hover:text-primary text-sm"
+								>Ютуб</NuxtLink
 							>
-								<span class="text-sm"
-									>santavtodetailing@gmail.com</span
-								>
-							</a>
-							<a
-								href="mailto:santavtodetailing@gmail.com"
-								class="flex items-center gap-3 text-sidebar-foreground transition-colors hover:text-primary"
+
+							<NuxtLink
+								to="https://www.instagram.com/sant_avto?igsh=MXdtMWFpczF5Z2V5MA%3D%3D&utm_source=qr"
+								target="_blank"
+								class="flex items-center gap-3 text-sidebar-foreground transition-colors hover:text-primary text-sm"
+								>Інстаграм</NuxtLink
 							>
-								<span class="text-sm"
-									>santavtodetailing@gmail.com</span
-								>
-							</a>
 						</div>
 					</div>
 				</div>

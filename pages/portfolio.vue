@@ -67,15 +67,20 @@
 					:class="{ animateSlideInTop: isInstLogoVisible }"
 					class="instLogo absolute top-[-53px] w-[106px] h-[106px] rounded-full flex items-center justify-center bg-[#232323]"
 				>
-					<NuxtImg
-						:lazy="false"
-						loading="eager"
-						height="50"
-						width="50"
-						src="/icons/instagram.svg"
-						alt="instagram-icon"
-						priority
-					/>
+					<NuxtLink
+						to="https://www.instagram.com/sant_avto?igsh=MXdtMWFpczF5Z2V5MA%3D%3D&utm_source=qr"
+						target="_blank"
+					>
+						<NuxtImg
+							:lazy="false"
+							loading="eager"
+							height="50"
+							width="50"
+							src="/icons/instagram.svg"
+							alt="instagram-icon"
+							priority
+						/>
+					</NuxtLink>
 				</div>
 			</div>
 		</section>
@@ -88,17 +93,21 @@
 			</h1>
 
 			<div ref="videoRef">
-				<NuxtImg
-					:class="{ animateSlideInTop: isVideoVisible }"
-					src="/portfolio/inst-video.png"
-					class="mt-[40px] m-auto cursor-pointer"
-					alt="portfolio-example-work-instagram-video"
-					width="1250"
-					height="703"
-					:lazy="false"
-					loading="eager"
-					format="webp"
-				/>
+				<NuxtLink
+					to="https://www.instagram.com/sant_avto?igsh=MXdtMWFpczF5Z2V5MA%3D%3D&utm_source=qr"
+					target="_blank"
+				>
+					<NuxtImg
+						:class="{ animateSlideInTop: isVideoVisible }"
+						src="/portfolio/inst-video.png"
+						class="mt-[40px] m-auto cursor-pointer"
+						alt="portfolio-example-work-instagram-video"
+						width="1250"
+						height="703"
+						:lazy="false"
+						loading="eager"
+						format="webp"
+				/></NuxtLink>
 			</div>
 		</section>
 

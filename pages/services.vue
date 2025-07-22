@@ -3,7 +3,7 @@
 		<!-- initial section -->
 
 		<section
-			class="h-[620px] relative z-0 bg-[#E8ECF0] text-[#232323] overflow-hidden"
+			class="sectionContainerInitial h-[620px] relative z-0 bg-[#E8ECF0] text-[#232323] overflow-hidden px-5"
 		>
 			<div
 				ref="bgRef"
@@ -18,50 +18,8 @@
 				/>
 			</div>
 
-			<!-- <div
-				ref="bgRef"
-				:class="{ slowAppearing: isBgVisible }"
-				class="bgImage absolute top-[170px] left-0 z-0 w-full slowAppearing hidden md:block"
-			>
-				<NuxtImg
-					src="/icons/bg-sant-avto.webp"
-					loading="eager"
-					:lazy="false"
-					format="webp"
-					alt="Hintergrundbild"
-					priority
-					preload
-				/>
-			</div> -->
-
 			<div
-				ref="carRef"
-				:class="{ animateSlideInRight: isCarVisible }"
-				class="bgImage absolute top-[250px] right-[100px] z-0"
-			>
-				<NuxtImg
-					src="/icons/bg-service.webp"
-					alt="car-image-bg"
-					:lazy="false"
-					loading="eager"
-					priority
-					height="332"
-					width="254"
-				/>
-			</div>
-
-			<!-- <img
-				ref="carRef"
-				:class="{ animateSlideInRight: isCarVisible }"
-				class="absolute top-[250px] right-[100px] z-0"
-				src="/public/icons/bg-service.webp"
-				alt="car-image-bg"
-				height="332"
-				width="254"
-			/> -->
-
-			<div
-				class="flex justify-between max-w-[1600px] w-full m-auto pt-[150px] z-10 relative"
+				class="textContainerMain flex justify-between max-w-[1600px] w-full m-auto pt-[130px] z-10 relative"
 			>
 				<!-- quotient -->
 				<div
@@ -82,10 +40,31 @@
 
 				<div
 					ref="asideTextRef"
-					:class="{ animateSlideInRight: isAsideTextVisible }"
-					class="asideText text-3xl pb-[40px] mr-40px pr-[40px] border-r-3 border-[#E67009] font-medium w-[220px]"
+					class="flex flex-col relative top-[-70px] gap-8"
 				>
-					Список всіх послуг
+					<div
+						:class="{ animateSlideInRight: isAsideTextVisible }"
+						class="asideText text-3xl top-[70px] pb-[70px] mr-40px pr-[40px] border-r-3 border-[#E67009] font-medium w-[220px] z-10 relative"
+					>
+						Список всіх послуг
+					</div>
+
+					<div
+						ref="carRef"
+						:class="{ animateSlideInRight: isCarVisible }"
+						class="bgImageCar z-0 relative"
+					>
+						<NuxtImg
+							src="/icons/bg-service.webp"
+							alt="car-image-bg"
+							:lazy="false"
+							loading="eager"
+							priority
+							height="332"
+							width="254"
+							class="z-0 relative"
+						/>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -253,6 +232,20 @@ const isVisibleList = elRefs.map(elRef =>
 		height: auto;
 		min-height: 280px;
 	}
+
+	.bgImageCar {
+		display: none;
+	}
+	.asideText {
+		padding-bottom: 20px;
+		font-size: 24px;
+	}
+	.sectionContainerInitial {
+		padding: 0px;
+	}
+	.textContainerMain {
+		padding-top: 50px;
+	}
 }
 
 /* Мобильные устройства (480px и менее) */
@@ -303,6 +296,9 @@ const isVisibleList = elRefs.map(elRef =>
 
 	.bgImage {
 		display: none;
+	}
+	.textContainerMain {
+		padding-top: 80px;
 	}
 }
 </style>

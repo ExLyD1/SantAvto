@@ -15,6 +15,7 @@
 		"@pinia/nuxt": "^0.11.1",
 		"@preline/pin-input": "^3.1.0",
 		"@splidejs/vue-splide": "^0.6.12",
+		"@vercel/analytics": "^1.5.0",
 		"emailjs-com": "^3.2.0",
 		"gsap": "^3.13.0",
 		"nuxt": "^3.17.4",
