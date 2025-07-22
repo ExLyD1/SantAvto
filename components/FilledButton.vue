@@ -1,5 +1,7 @@
 <template>
-	<button :class="` bg-[#E67009] text-white cursor-pointer `">
+	<button
+		:class="` bg-[#E67009] text-white cursor-pointer [font-family:'Montserrat',sans-serif]`"
+	>
 		{{ label }}
 	</button>
 </template>

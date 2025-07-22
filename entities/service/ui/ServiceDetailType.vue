@@ -88,6 +88,7 @@
 								class="w-full"
 								:services="currentServices"
 								@close="closePriceList"
+								:is-show-prices="false"
 							/>
 						</div>
 					</Transition>

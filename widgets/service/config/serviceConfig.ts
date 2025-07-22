@@ -11,21 +11,21 @@ export const serviceVariationList: IServiceVariation[] = [
 		description:
 			'Видалення вм’ятин без фарбування. Повертаємо кузову первісну форму без пошкодження лакофарбового покриття. Швидко, безпечно, професійно.',
 		imgUrl: '/services/img1.png',
-		moreLink: '/detailing',
+		moreLink: '/wrench',
 	},
 	{
 		title: 'Хімчистка',
 		description:
 			'Глибока хімчистка салону з усуненням плям, запахів і пилу. Відновлюємо чистоту, свіжість і естетику інтер’єру без пошкодження матеріалів.',
 		imgUrl: '/services/img2.png',
-		moreLink: '/wrench',
+		moreLink: '/detailing',
 	},
 	{
 		title: 'Полірування',
 		description:
 			'Професійне полірування кузова для відновлення глибини кольору та блиску. Видаляємо дрібні подряпини й сліди зносу — авто виглядає як нове.',
 		imgUrl: '/services/img3.png',
-		moreLink: '/protect',
+		moreLink: '/detailing',
 	},
 	{
 		title: 'Заміна кольору',

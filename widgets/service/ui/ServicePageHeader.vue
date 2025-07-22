@@ -19,7 +19,7 @@
 			<div
 				ref="portfolioQuotientRef"
 				:class="{ animateSlideInLeft: isPortfolioQuotientVisible }"
-				class="flex flex-col gap-[15px] text-[#232323] w-[720px] text-[65px]/[100%] font-bold"
+				class="flex flex-col gap-[15px] text-[#232323] w-[720px] text-[65px]/[100%] font-bold [font-family:'Raleway',sans-serif]"
 			>
 				<h1
 					v-for="(text, index) in quotientArr"

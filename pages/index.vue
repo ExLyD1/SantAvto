@@ -26,7 +26,7 @@
 			>
 				<!-- quotient - responsive text sizing and spacing -->
 				<div
-					class="flex flex-col gap-[8px] sm:gap-[10px] lg:gap-[15px] text-[#232323] w-full lg:w-[720px] text-[32px]/[110%] sm:text-[45px]/[105%] lg:text-[75px]/[100%] font-bold animateSlideInLeft"
+					class="flex flex-col gap-[8px] sm:gap-[10px] lg:gap-[15px] text-[#232323] w-full lg:w-[720px] text-[32px]/[110%] sm:text-[45px]/[105%] lg:text-[75px]/[100%] font-extrabold animateSlideInLeft [font-family:'Raleway',sans-serif]"
 				>
 					<h1
 						v-for="(text, index) in initialSectionWords"
@@ -102,7 +102,7 @@
 					:class="{
 						animateSlideInLeft: isExperienceQuotientVisible,
 					}"
-					class="flex flex-col gap-[8px] sm:gap-[12px] lg:gap-[15px] text-[#E8ECF0] w-full lg:w-fit text-[28px]/[110%] sm:text-[40px]/[105%] lg:text-[55px]/[100%] text-center lg:text-left h-fit"
+					class="flex flex-col gap-[8px] sm:gap-[12px] lg:gap-[15px] text-[#E8ECF0] w-full lg:w-fit text-[28px]/[110%] sm:text-[40px]/[105%] lg:text-[55px]/[100%] text-center lg:text-left h-fit [font-family:'Raleway',sans-serif] font-extrabold"
 				>
 					<h1
 						v-for="(text, index) in experienceQuotient"
@@ -167,7 +167,7 @@
 			>
 				<!-- quotient - responsive text sizing -->
 				<div
-					class="flex flex-col gap-[8px] sm:gap-[12px] lg:gap-[15px] text-[#E8ECF0] w-full lg:w-[720px] text-[32px]/[110%] sm:text-[45px]/[105%] lg:text-[55px]/[100%] font-bold"
+					class="flex flex-col gap-[8px] sm:gap-[12px] lg:gap-[15px] text-[#E8ECF0] w-full lg:w-[720px] text-[32px]/[110%] sm:text-[45px]/[105%] lg:text-[55px]/[100%] font-bold [font-family:'Raleway',sans-serif]"
 				>
 					<h1
 						v-for="(text, index) in servicesQuotient"
@@ -289,7 +289,7 @@
 				<h2
 					ref="reviewsH1Ref"
 					:class="{ animateSlideInLeft: isReviewsH1Visible }"
-					class="pl-[20px] sm:pl-[30px] lg:pl-[40px] border-l-3 border-[#E67009] text-[#232323] text-3xl sm:text-5xl lg:text-7xl font-bold mb-[30px] lg:mb-[60px]"
+					class="pl-[20px] sm:pl-[30px] lg:pl-[40px] border-l-3 border-[#E67009] text-[#232323] text-3xl sm:text-5xl lg:text-7xl font-bold mb-[30px] lg:mb-[60px] [font-family:'Raleway',sans-serif]"
 				>
 					Відгуки клієнтів
 				</h2>
@@ -317,10 +317,13 @@
 
 				<!-- more reviews button - responsive sizing -->
 				<div class="mt-[40px] lg:mt-[80px] flex justify-center">
-					<FilledButton
-						:label="'Більше відгуків'"
-						class="w-[200px] h-[60px] lg:w-[218px] lg:h-[67px]"
-					/>
+					<NuxtLink
+						target="_blank"
+						to="https://www.google.com/maps/place/Sant+Avto/@50.4255324,30.6302409,17z/data=!4m6!3m5!1s0x40d4c5bff8696625:0x1e18368cf21d22d0!8m2!3d50.4253008!4d30.6304923!16s%2Fg%2F11xlyl83td?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
+						><FilledButton
+							:label="'Більше відгуків'"
+							class="w-[200px] h-[60px] lg:w-[218px] lg:h-[67px]"
+					/></NuxtLink>
 				</div>
 			</div>
 		</section>
@@ -362,9 +365,9 @@ import { rewriteDefault } from 'vue/compiler-sfc'
 const isLargeScreen = useMediaQuery('(min-width: 1024px)')
 const isPreferredDark = useMediaQuery('(prefers-color-scheme: dark)')
 
-const initialSectionWords: string[] = ['Досконалість', 'Престиж', 'Догляд']
-const experienceQuotient: string[] = ['Тільки ', 'Професіонали з', 'Досвідом']
-const servicesQuotient: string[] = ['Послуги з ', 'Детейлінгу ']
+const initialSectionWords: string[] = ['Досконалість', 'престиж', 'догляд']
+const experienceQuotient: string[] = ['Тільки ', 'професіонали з', 'досвідом']
+const servicesQuotient: string[] = ['Послуги з ', 'детейлінгу ']
 
 const formattedNumber = '+380 (67) 868 50 00'
 

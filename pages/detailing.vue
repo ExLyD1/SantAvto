@@ -21,7 +21,7 @@ import { detailingImages } from '~/widgets/service/config/serviceExampleImages'
 import ServicePriceGroup from '~/widgets/service/ui/ServicePriceGroup.vue'
 import { detailingPriceMenu } from '~/entities/service/config/servicePriceConfig'
 
-const detailingQuotient: string[] = ['Детейлінг', 'Для вашого', 'Авто']
+const detailingQuotient: string[] = ['Детейлінг', 'для вашого', 'авто']
 const description =
 	'Професійно очищаємо, відновлюємо та захищаємо кожен елемент авто - від кузова до салону. Детейлінг повертає блиск, охайність і заводський вигляд, зберігаючи цінність вашого автомобіля надовго.'
 </script>

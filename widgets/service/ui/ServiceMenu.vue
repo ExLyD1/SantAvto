@@ -35,7 +35,9 @@
 							/>
 						</svg>
 					</h2>
-					<span class="text-sm text-gray-400">Від</span>
+					<span v-if="isShowPrices" class="text-sm text-gray-400"
+						>Від</span
+					>
 				</div>
 
 				<!-- Category Services (Collapsible) -->
@@ -73,6 +75,7 @@
 									</span>
 								</div>
 								<div
+									v-if="isShowPrices"
 									class="text-[#E67009] text-sm text-end w-[80px] whitespace-nowrap font-medium group-hover:scale-105 transition-transform duration-200"
 								>
 									{{ service.price }}
@@ -98,6 +101,7 @@ import type { IServicePrice } from '~/entities/service/config/servicePriceConfig
 
 const props = defineProps<{
 	services: IServiceMenu[] | IServicePrice[]
+	isShowPrices?: boolean
 }>()
 
 const emit = defineEmits(['close'])

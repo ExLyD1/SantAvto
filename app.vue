@@ -31,6 +31,7 @@ onMounted(() => {
 <style>
 html {
 	scroll-behavior: smooth;
+	font-family: 'Montserrat', sans-serif;
 }
 /* Chrome, Edge, Safari */
 ::-webkit-scrollbar {

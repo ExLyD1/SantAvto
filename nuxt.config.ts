@@ -8,9 +8,17 @@ export default defineNuxtConfig({
 		'@nuxt/ui',
 		'nuxt-swiper',
 		'@nuxt/image',
+		'nuxt-toast',
+		'@nuxtjs/google-fonts',
 	],
 	ui: {
 		colorMode: false,
+	},
+
+	tailwindcss: {
+		cssPath: '~/assets/css/main.css', // шлях до вашого файлу з директивами
+		configPath: 'tailwind.config.js', // шлях до конфіга
+		exposeConfig: false,
 	},
 
 	app: {
@@ -40,10 +48,17 @@ export default defineNuxtConfig({
 			],
 			link: [
 				{
-					rel: 'preload',
+					rel: 'icon',
 					as: 'image',
-					type: 'image/png',
-					href: '/favicon.svg',
+					type: 'image/x-icon',
+					href: '/favicon.ico',
+				},
+				{
+					rel: 'stylesheet',
+					href: 'https://fonts.googleapis.com/css2?\
+family=Raleway:wght@400;500;600;700&\
+family=Montserrat:wght@400;500;600;700&\
+display=swap',
 				},
 			],
 		},

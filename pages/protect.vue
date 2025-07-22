@@ -21,7 +21,7 @@ import { protectImages } from '~/widgets/service/config/serviceExampleImages'
 import ServicePriceGroup from '~/widgets/service/ui/ServicePriceGroup.vue'
 import { protectMenu } from '~/entities/service/config/servicePriceConfig'
 
-const protectQuotient: string[] = ['Захист', 'Вашого', 'Авто']
+const protectQuotient: string[] = ['Захист', 'вашого', 'авто']
 const description =
 	'Захист авто — це естетика і довговічність, наша кераміка надає блиск і захист, плівки зберігають лкп, антикор протистоїть іржі, усе щоб авто виглядало дорого і служило довше.'
 </script>

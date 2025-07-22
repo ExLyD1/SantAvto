@@ -186,7 +186,7 @@
 </template>
 
 <script setup lang="ts">
-const quotientArr = ['Детейлінг, що', 'Вражає']
+const quotientArr = ['Детейлінг, що', 'вражає']
 const quotientArr2 = ['Видалення вм’ятин']
 
 const imagesArr = [

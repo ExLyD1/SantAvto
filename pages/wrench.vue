@@ -21,7 +21,7 @@ import { wrenchImages } from '~/widgets/service/config/serviceExampleImages'
 import ServicePriceGroup from '~/widgets/service/ui/ServicePriceGroup.vue'
 import { wrenchMenu } from '~/entities/service/config/servicePriceConfig'
 
-const wrenchQuotient: string[] = ['Кузовні роботи', 'Для вашого', 'Авто']
+const wrenchQuotient: string[] = ['Кузовні роботи', 'для вашого', 'авто']
 const description =
 	'Ваш автомобіль заслуговує на бездоганний вигляд. Ми виконуємо кузовні роботи з ювелірною точністю, поєднуючи сучасні технології, та дбайливий підхід до кожної деталі.'
 </script>

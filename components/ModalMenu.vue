@@ -137,7 +137,7 @@ const serviceItems = [
 	{ name: 'Детейлінг', href: '/detailing' },
 	{ name: 'Кузовні роботи', href: '/wrench' },
 	{ name: 'Захист авто', href: '/protect' },
-	{ name: 'Фарбування', href: '/pallete' },
+	{ name: 'Стайлінг', href: '/pallete' },
 ]
 
 const emit = defineEmits(['close'])

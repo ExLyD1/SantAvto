@@ -25,7 +25,7 @@
 				<div
 					ref="quotientRef"
 					:class="{ animateSlideInLeft: isQuotientVisible }"
-					class="flex flex-col gap-[15px] text-[#232323] w-[720px] text-[95px]/[100%] font-bold"
+					class="flex flex-col gap-[15px] text-[#232323] w-[720px] text-[95px]/[100%] font-bold [font-family:'Raleway',sans-serif]"
 				>
 					<h1
 						v-for="(text, index) in offeringQuotien"

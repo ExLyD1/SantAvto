@@ -1,19 +1,21 @@
-// tailwind.config.js
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
 	theme: {
 		extend: {
-			colors: {
-				myOrange: '#E67009',
+			fontFamily: {
+				raleway: ['Raleway', 'sans-serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
 			},
 		},
 	},
+	// якщо ви використовуєте jit‑режим — переконайтесь, що src охоплює всі .vue/.js
 	content: [
 		'./components/**/*.{vue,js,ts}',
-		'./layouts/**/*.vue',
+		'./features/**/*.{vue,js,ts}',
+		'./widgets/**/*.{vue,js,ts}',
+		'./entities/**/*.vue',
 		'./pages/**/*.vue',
 		'./app.vue',
-		'./plugins/**/*.{js,ts}',
 		'./nuxt.config.{js,ts}',
 	],
-	plugins: [],
 }

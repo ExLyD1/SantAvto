@@ -18,7 +18,7 @@
 						>
 							<!-- quotient -->
 							<div
-								class="quotientContainer flex flex-col gap-[15px] text-[#232323] w-[720px] text-[65px]/[100%] font-bold"
+								class="quotientContainer flex flex-col gap-[15px] text-[#232323] w-[720px] text-[65px]/[100%] font-bold [font-family:'Raleway',sans-serif]"
 							>
 								<h1
 									v-for="(text, index) in quotientArr"
@@ -71,7 +71,7 @@
 						<!-- Right Column - Contact Form -->
 						<div class="formColumn rounded-lg p-8">
 							<h2
-								class="formTitle text-2xl font-semibold text-gray-800 mb-6"
+								class="formTitle text-2xl font-semibold text-gray-800 mb-6 [font-family:'Raleway',sans-serif]"
 							>
 								Контактна форма
 							</h2>
@@ -143,6 +143,8 @@
 												src="/icons/checked.png"
 												alt="checkbox-checked"
 												:lazy="false"
+												height="8"
+												width="10"
 												loading="eager"
 												class="select-none"
 											/>
@@ -166,7 +168,7 @@
 
 								<!-- Submit Button -->
 								<FilledButton
-									class="submitButton w-[252px] h-[84px]"
+									class="submitButton w-[252px] h-[84px] text-lg"
 									:label="'Надіслати'"
 									@click.prevent="submitForm"
 								/>
@@ -184,7 +186,7 @@ import emailjs from 'emailjs-com'
 import { useRuntimeConfig } from '#app'
 
 const config = useRuntimeConfig().public
-const quotientArr = ['Записатися на', 'Консультацію']
+const quotientArr = ['Записатися на', 'консультацію']
 
 emailjs.init(config.emailjsPublicKey)
 
@@ -232,7 +234,10 @@ function submitForm() {
 		.then(
 			() => {
 				// Успех — очистим форму или покажем сообщение
-				alert('Повідомлення відправлено!')
+				useShowToast(
+					'Очікуйте на дзвінок протягом доби.',
+					'Успішно відправлено!'
+				)
 				form.userName = ''
 				form.phoneNumber = '+380'
 				form.isCheckedBox = false

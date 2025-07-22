@@ -17,7 +17,9 @@
 
 		<div class="serviceCardText flex-1 flex flex-col">
 			<!-- title -->
-			<h1 class="text-[#E8ECF0] text-2xl md:text-3xl lg:text-4xl">
+			<h1
+				class="text-[#E8ECF0] text-2xl md:text-3xl lg:text-4xl [font-family:'Raleway',sans-serif]"
+			>
 				{{ service.title }}
 			</h1>
 

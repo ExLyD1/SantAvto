@@ -1,7 +1,7 @@
 <template>
 	<!-- Responsive header: mobile hamburger menu, tablet+ full navigation -->
 	<header
-		class="w-full h-[60px] sm:h-[70px] lg:h-[80px] text-[#232323] bg-[#E8ECF0]"
+		class="w-full h-[60px] sm:h-[70px] lg:h-[80px] text-[#232323] bg-[#E8ECF0] [font-family:'Montserrat',sans-serif]"
 		keep-alive
 	>
 		<div
