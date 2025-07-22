@@ -130,4 +130,11 @@ html {
 		opacity: 1;
 	}
 }
+
+@media screen and (max-width: 320px) {
+	* {
+		min-width: 0px;
+		font-size: 10px;
+	}
+}
 </style>

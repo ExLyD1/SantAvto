@@ -33,7 +33,7 @@ export const footerSocialMedia: IFooterSocialMedia[] = [
 		link: '/instagram.com',
 	},
 	{
-		image_link: '/icons/youtube.svg',
+		image_link: '/icons/YouTube.png',
 		link: '/youtube.com',
 	},
 	{

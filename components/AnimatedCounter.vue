@@ -1,6 +1,6 @@
 <template>
 	<div ref="counterRef" class="flex text-5xl lg:text-7xl">
-		<span>{{ displayNumber }}</span>
+		<span>{{ displayNumber }}<span v-if="isK">к</span> </span>
 		<span class="text-[rgba(255,255,255,0.5)]">+</span>
 	</div>
 </template>
@@ -10,6 +10,7 @@ import { ref, onMounted } from 'vue'
 
 const props = defineProps<{
 	targetNumber: number
+	isK?: boolean
 }>()
 
 const displayNumber = ref(0)

@@ -140,7 +140,7 @@
 						<div
 							class="flex flex-col sm:flex-row gap-[15px] sm:gap-[40px] lg:gap-[70px] pl-[20px] lg:pl-[40px] border-l-3 items-start sm:items-center border-[#E67009]"
 						>
-							<AnimatedCounter :target-number="9" />
+							<AnimatedCounter :target-number="9" :is-k="true" />
 
 							<div class="text-base lg:text-lg text-[#E67009]">
 								Обслуговано клієнтів
